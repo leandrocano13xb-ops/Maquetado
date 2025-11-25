@@ -1,0 +1,26 @@
+.navbar-dark.bg-dark {
+  background: linear-gradient(
+    135deg,
+    rgba(4, 15, 240, 0.991) 0%,
+    rgba(0, 149, 255, 0.996) 100%,
+    rgba(8, 21, 255, 0.85) 50%
+  ) !important;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.navbar-dark .nav-link {
+  color: #f5f5f5;
+  transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+.navbar-dark .nav-link:hover {
+  color: #ff6f61; /* Un tono vino más claro o rosado */
+  text-shadow: 0 0 5px rgba(255, 111, 97, 0.8);
+}
+.card {
+  background-color: rgb(60, 255, 0);
+  height: 400px;
+  width: 400px;
+  border-radius: 15px;      
+}
