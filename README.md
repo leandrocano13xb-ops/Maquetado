@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 recordar si viy a subir actualizar el repo de leandro 
 
 
@@ -14,3 +15,6 @@ git merge main
 como funciona:https://www.youtube.com/watch?v=IW6c-HSPHa4&t=162s
 
 Mi dibujo loco es todo lo que el contenido que tengo en la carpeta de maquetado en la rama git de main
+=======
+recordar si viy a subir actualizar el repo de leandro 
+>>>>>>> 9a204d2eddb7de73942af460b9ff1e433d141d25
