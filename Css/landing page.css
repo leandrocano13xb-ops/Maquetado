@@ -1,26 +1,97 @@
-.navbar-dark.bg-dark {
-  background: linear-gradient(
-    135deg,
-    rgba(4, 15, 240, 0.991) 0%,
-    rgba(0, 149, 255, 0.996) 100%,
-    rgba(8, 21, 255, 0.85) 50%
-  ) !important;
-  -webkit-backdrop-filter: blur(10px);
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-}
-.navbar-dark .nav-link {
-  color: #f5f5f5;
-  transition: color 0.3s ease, text-shadow 0.3s ease;
+/* Hero */
+.hero {
+  background: url("../img/hero-bg.jpg") center/cover no-repeat;
+  height: 85vh;
+  display: flex;
+  align-items: center;
+  color: #fff;
+  text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.7);
 }
 
-.navbar-dark .nav-link:hover {
-  color: #ff6f61; /* Un tono vino más claro o rosado */
-  text-shadow: 0 0 5px rgba(255, 111, 97, 0.8);
+.hero h1 {
+  font-size: 4rem;
+  font-weight: 700;
 }
-.card {
-  background-color: rgb(60, 255, 0);
-  height: 400px;
-  width: 400px;
-  border-radius: 15px;      
+
+.service-icon {
+  font-size: 40px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+/* Personalización de la navbar */
+nav.navbar.navbar-dark.bg-dark.navbar-expand-lg {
+  background-color: #111 !important;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* Enlaces del menú */
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  letter-spacing: 0.5px;
+}
+
+/* Hover en enlaces */
+.navbar .nav-link:hover {
+  color: #c9a227 !important; /* Dorado elegante */
+}
+
+/* Marca de la barbería */
+.navbar-brand {
+  color: #c9a227 !important; /* Dorado elegante */
+  font-weight: bold;
+  letter-spacing: 1px;
+}
+.footer {
+  background-color: #8c441b;
+  color: #fff;
+  padding: 20px 0;
+}
+
+.footer a {
+  color: #c9a227;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Footer personalizado */
+.footer-custom {
+  background-color: #111; /* Fondo oscuro elegante */
+  color: #ffffff; /* Texto blanco */
+  padding: 30px 0; /* Espaciado */
+}
+
+/* Estilos para los íconos del footer */
+.footer-custom i {
+  font-size: 22px;
+  color: #c9a227; /* Dorado elegante */
+  transition: 0.3s;
+}
+
+.footer-custom i:hover {
+  color: #ffffff; /* Se vuelve blanco al pasar el mouse */
+}
+.btn-registro {
+  background-color: #d96704 !important; /* Color personalizado */
+  color: #ffffff !important; /* Texto blanco */
+  border-radius: 12px; /* Bordes redondeados */
+  padding: 12px 25px; /* Más grande */
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+
+.btn-registro:hover {
+  background-color: #f29f05 !important; /* Hover oscuro */
+  color: #ffffff !important;
+  transform: scale(1.05); /* Efecto zoom */
+}
+.navbar-brand {
+  display: flex;
+  justify-content: center;
+  width: 100%;
 }
