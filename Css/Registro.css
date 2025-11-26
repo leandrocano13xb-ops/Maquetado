@@ -1,0 +1,205 @@
+   /* ======================= */
+        /*     VARIABLES GLOBALES  */
+        /* ======================= */
+        :root {
+            --bg-dark: #1e1e1e;
+            --bg-input: #1d1f29;
+            --accent: #0bd49b;
+            --accent-hover: #f37c13;
+            --text-light: #ffffff;
+            --radius: 18px;
+            --shadow: 0 4px 20px rgba(0,0,0,0.35);
+            --max-card-width: 420px;
+        }
+
+        /* ======================= */
+        /*      ESTILOS GLOBALES   */
+        /* ======================= */
+        body {
+            background: #ffffff;
+            font-family: "Poppins", sans-serif;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 30px 0;
+            min-height: 100vh;
+        }
+
+        /* Logo */
+        .logo-barber {
+            width: 260px;
+            margin-bottom: 40px;
+        }
+
+        /* ======================= */
+        /*     CONTENEDOR DUAL     */
+        /* ======================= */
+        .auth-wrapper {
+            width: 100%;
+            max-width: 1100px;
+            display: flex;
+            justify-content: space-between;
+            gap: 40px;
+            flex-wrap: wrap;
+        }
+
+        /* ======================= */
+        /*       TARJETAS FORMS    */
+        /* ======================= */
+        .auth-card {
+            background: var(--bg-dark);
+            width: 100%;
+            max-width: var(--max-card-width);
+            padding: 40px 35px;
+            border-radius: var(--radius);
+            box-shadow: var(--shadow);
+            color: var(--text-light);
+        }
+
+        .auth-card h2 {
+            text-align: center;
+            font-size: 22px;
+            margin-bottom: 25px;
+        }
+
+        /* ======================= */
+        /*        INPUTS           */
+        /* ======================= */
+        .input-group-custom {
+            background: var(--bg-input);
+            padding: 10px 14px;
+            border-radius: 8px;
+            display: flex;
+            align-items: center;
+            margin-bottom: 16px;
+        }
+
+        .input-group-custom i {
+            color: var(--accent);
+            font-size: 16px;
+            margin-right: 10px;
+        }
+
+        .input-group-custom input {
+            background: transparent;
+            border: none;
+            outline: none;
+            color: var(--text-light);
+            width: 100%;
+        }
+
+        /* ======================= */
+        /*        LINKS            */
+        /* ======================= */
+        .auth-links {
+            text-align: center;
+            margin-top: 10px;
+        }
+
+        .auth-links a {
+            font-size: 13px;
+            color: #cfcfcf;
+            text-decoration: none;
+        }
+
+        .auth-links a:hover {
+            text-decoration: underline;
+        }
+
+        /* ======================= */
+        /*        BOTONES          */
+        /* ======================= */
+        .btn-orange {
+            background: var(--accent);
+            color: white;
+            border: none;
+            padding: 12px 26px;
+            border-radius: 8px;
+            font-size: 16px;
+            display: block;
+            margin: 20px auto 0;
+            transition: 0.3s ease;
+            width: 100%;
+            font-weight: bold;
+        }
+
+        .btn-orange:hover {
+            background: var(--accent-hover);
+        }
+
+        /* ======================= */
+        /*      RESPONSIVE         */
+        /* ======================= */
+        @media (max-width: 992px) {
+            .auth-wrapper {
+                justify-content: center;
+            }
+        }
+
+        @media (max-width: 600px) {
+            .logo-barber {
+                width: 200px;
+                margin-bottom: 20px;
+            }
+
+            .auth-card {
+                padding: 30px 25px;
+            }
+        }
+
+        /* ======================= */
+        /*   ESTILOS ESPECÍFICOS   */
+        /* ======================= */
+        
+        /* Títulos principales */
+        .main-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--bg-dark);
+            line-height: 1.2;
+        }
+        
+        /* Subtítulos */
+        .subtitle {
+            font-size: 1.5rem;
+            text-align: center;
+            margin-bottom: 2rem;
+            color: #666;
+        }
+        
+        /* Separador visual */
+        .divider {
+            height: 1px;
+            background-color: #333;
+            margin: 1.5rem 0;
+        }
+        
+        /* Contenedor de formularios */
+        .forms-container {
+            display: flex;
+            justify-content: center;
+            gap: 40px;
+            width: 100%;
+            max-width: 1100px;
+        }
+        
+        /* Estilos para los formularios individuales */
+        .form-section {
+            flex: 1;
+            max-width: 450px;
+        }
+        
+        /* Responsive para formularios */
+        @media (max-width: 992px) {
+            .forms-container {
+                flex-direction: column;
+                align-items: center;
+            }
+            
+            .form-section {
+                width: 100%;
+                max-width: 450px;
+            }
+        }
